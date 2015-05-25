@@ -1,0 +1,57 @@
+2015-05-19 11:20:19.401 gamify[7313:3863616] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/nonche/Library/Developer/CoreSimulator/Devices/E9FDB83E-C97D-4926-9120-70CF557D0F2A/data/Containers/Data/Application/0ABAB3FA-F20D-431B-9688-43BCBDC426CB/Library/Cookies/Cookies.binarycookies
+2015-05-19 11:20:19.472 gamify[7313:3863616] Apache Cordova native platform version 3.8.0 is starting.
+2015-05-19 11:20:19.473 gamify[7313:3863616] Multi-tasking -> Device: YES, App: YES
+2015-05-19 11:20:19.474 gamify[7313:3863616] Unlimited access to network resources
+2015-05-19 11:20:19.534 gamify[7313:3863616] [CDVTimer][keyboard] 0.045002ms
+2015-05-19 11:20:19.534 gamify[7313:3863616] [CDVTimer][TotalPluginStartup] 0.189006ms
+2015-05-19 11:20:19.584 gamify[7313:3863616] Resetting plugins due to page load.
+2015-05-19 11:20:19.857 gamify[7313:3863616] Finished load of: file:///Users/nonche/Library/Developer/CoreSimulator/Devices/E9FDB83E-C97D-4926-9120-70CF557D0F2A/data/Containers/Bundle/Application/A864D06D-3856-48DC-9ED8-0259A51B7D15/gamify.app/www/index.html#/products
+2015-05-20 10:16:32.509 gamify[35513:5313398] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/nonche/Library/Developer/CoreSimulator/Devices/E9FDB83E-C97D-4926-9120-70CF557D0F2A/data/Containers/Data/Application/23B2834C-346A-465B-9CAC-5928054C6192/Library/Cookies/Cookies.binarycookies
+2015-05-20 10:16:32.579 gamify[35513:5313398] Apache Cordova native platform version 3.8.0 is starting.
+2015-05-20 10:16:32.579 gamify[35513:5313398] Multi-tasking -> Device: YES, App: YES
+2015-05-20 10:16:32.581 gamify[35513:5313398] Unlimited access to network resources
+2015-05-20 10:16:32.651 gamify[35513:5313398] [CDVTimer][keyboard] 0.047028ms
+2015-05-20 10:16:32.651 gamify[35513:5313398] [CDVTimer][TotalPluginStartup] 0.196040ms
+2015-05-20 10:16:32.724 gamify[35513:5313398] Resetting plugins due to page load.
+2015-05-20 10:16:32.989 gamify[35513:5313398] Finished load of: file:///Users/nonche/Library/Developer/CoreSimulator/Devices/E9FDB83E-C97D-4926-9120-70CF557D0F2A/data/Containers/Bundle/Application/8C54E91B-83ED-49E6-A695-1AB4935D569D/gamify.app/www/index.html#/products
+2015-05-24 17:30:56.573 gamify[8197:7407256] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/nonche/Library/Developer/CoreSimulator/Devices/E9FDB83E-C97D-4926-9120-70CF557D0F2A/data/Containers/Data/Application/8A5E9B64-1788-4FB9-B2FA-C9BDBA2907FD/Library/Cookies/Cookies.binarycookies
+2015-05-24 17:30:56.837 gamify[8197:7407256] Apache Cordova native platform version 3.8.0 is starting.
+2015-05-24 17:30:56.838 gamify[8197:7407256] Multi-tasking -> Device: YES, App: YES
+2015-05-24 17:30:56.851 gamify[8197:7407256] Unlimited access to network resources
+2015-05-24 17:30:57.185 gamify[8197:7407256] [CDVTimer][keyboard] 0.056982ms
+2015-05-24 17:30:57.185 gamify[8197:7407256] [CDVTimer][TotalPluginStartup] 0.236988ms
+2015-05-24 17:30:57.377 gamify[8197:7407256] Resetting plugins due to page load.
+2015-05-24 17:30:57.708 gamify[8197:7407256] Finished load of: file:///Users/nonche/Library/Developer/CoreSimulator/Devices/E9FDB83E-C97D-4926-9120-70CF557D0F2A/data/Containers/Bundle/Application/DC8D439F-A03A-47C6-B51B-1DE8F884EBD0/gamify.app/www/index.html#/products
+2015-05-24 17:34:23.938 gamify[8197:7407256] Resetting plugins due to page load.
+2015-05-24 17:34:23.942 gamify[8197:7407256] Failed to load webpage with error: The Internet connection appears to be offline.
+2015-05-24 17:34:24.879 gamify[8197:7407256] Resetting plugins due to page load.
+2015-05-24 17:34:24.884 gamify[8197:7407256] Failed to load webpage with error: The Internet connection appears to be offline.
+2015-05-24 17:34:26.217 gamify[8197:7407256] Resetting plugins due to page load.
+2015-05-24 17:34:26.221 gamify[8197:7407256] Failed to load webpage with error: The Internet connection appears to be offline.
+2015-05-24 17:34:26.385 gamify[8197:7407256] Resetting plugins due to page load.
+2015-05-24 17:34:26.390 gamify[8197:7407256] Failed to load webpage with error: The Internet connection appears to be offline.
+2015-05-24 17:45:56.147 gamify[9505:7419166] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/nonche/Library/Developer/CoreSimulator/Devices/E9FDB83E-C97D-4926-9120-70CF557D0F2A/data/Containers/Data/Application/E81CBFC7-CDF0-460B-A015-FD5B99C9C98B/Library/Cookies/Cookies.binarycookies
+2015-05-24 17:45:56.229 gamify[9505:7419166] Apache Cordova native platform version 3.8.0 is starting.
+2015-05-24 17:45:56.229 gamify[9505:7419166] Multi-tasking -> Device: YES, App: YES
+2015-05-24 17:45:56.231 gamify[9505:7419166] Unlimited access to network resources
+2015-05-24 17:45:56.286 gamify[9505:7419166] [CDVTimer][keyboard] 0.042021ms
+2015-05-24 17:45:56.286 gamify[9505:7419166] [CDVTimer][TotalPluginStartup] 0.167966ms
+2015-05-24 17:45:56.327 gamify[9505:7419166] Resetting plugins due to page load.
+2015-05-24 17:45:56.556 gamify[9505:7419166] Finished load of: file:///Users/nonche/Library/Developer/CoreSimulator/Devices/E9FDB83E-C97D-4926-9120-70CF557D0F2A/data/Containers/Bundle/Application/6A589FBC-ADDE-45D9-B3C3-FFDE78EB4B3B/gamify.app/www/index.html#/products
+2015-05-24 17:49:10.724 gamify[10245:7423372] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/nonche/Library/Developer/CoreSimulator/Devices/E9FDB83E-C97D-4926-9120-70CF557D0F2A/data/Containers/Data/Application/856D1B96-352E-4A2C-B1F8-2960867F4838/Library/Cookies/Cookies.binarycookies
+2015-05-24 17:49:10.816 gamify[10245:7423372] Apache Cordova native platform version 3.8.0 is starting.
+2015-05-24 17:49:10.817 gamify[10245:7423372] Multi-tasking -> Device: YES, App: YES
+2015-05-24 17:49:10.818 gamify[10245:7423372] Unlimited access to network resources
+2015-05-24 17:49:10.874 gamify[10245:7423372] [CDVTimer][keyboard] 0.055015ms
+2015-05-24 17:49:10.874 gamify[10245:7423372] [CDVTimer][TotalPluginStartup] 0.204027ms
+2015-05-24 17:49:10.910 gamify[10245:7423372] Resetting plugins due to page load.
+2015-05-24 17:49:11.294 gamify[10245:7423372] Finished load of: file:///Users/nonche/Library/Developer/CoreSimulator/Devices/E9FDB83E-C97D-4926-9120-70CF557D0F2A/data/Containers/Bundle/Application/9007DDF1-70DD-45BE-85B3-44A5A78E8B6A/gamify.app/www/index.html#/products
+2015-05-24 20:26:29.373 gamify[10245:7423372] Simulator slow-motion animations are now on
+2015-05-24 20:31:52.555 gamify[11623:7441887] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/nonche/Library/Developer/CoreSimulator/Devices/E9FDB83E-C97D-4926-9120-70CF557D0F2A/data/Containers/Data/Application/C9BBC43F-E7E0-4602-8798-66DFF6054055/Library/Cookies/Cookies.binarycookies
+2015-05-24 20:31:52.621 gamify[11623:7441887] Apache Cordova native platform version 3.8.0 is starting.
+2015-05-24 20:31:52.621 gamify[11623:7441887] Multi-tasking -> Device: YES, App: YES
+2015-05-24 20:31:52.623 gamify[11623:7441887] Unlimited access to network resources
+2015-05-24 20:31:52.679 gamify[11623:7441887] [CDVTimer][keyboard] 0.047028ms
+2015-05-24 20:31:52.679 gamify[11623:7441887] [CDVTimer][TotalPluginStartup] 0.193000ms
+2015-05-24 20:31:52.721 gamify[11623:7441887] Resetting plugins due to page load.
+2015-05-24 20:31:52.984 gamify[11623:7441887] Finished load of: file:///Users/nonche/Library/Developer/CoreSimulator/Devices/E9FDB83E-C97D-4926-9120-70CF557D0F2A/data/Containers/Bundle/Application/A5048AD2-33C8-4B2D-84B3-FD56595E9D42/gamify.app/www/index.html#/products

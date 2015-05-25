@@ -1,0 +1,86 @@
+h1 {
+    font-size:22px;
+}
+.bar.bar-energized {
+    border-color: #007118;
+    background-color: #007118;
+    color: #fff;
+}
+
+.ion-close-round::before {
+    font-size: 18px !important;
+}
+
+.item .badge {
+    height: 38px;
+    width: 38px;
+    font-size: 17px;
+    font-weight: 600;
+    background: #fff;
+    color:#007118;
+    display: inline;
+    padding: 11px 0 0 0;
+    text-align: center;
+    right: 14px !important;
+}
+
+.bubble {
+    background: #007118;
+    height: 68px;
+    width: 68px;
+    border-radius: 34px;
+    font-size: 20px;
+    color: #ffffff;
+    display: inline-block;
+    margin-left: 26px;
+    padding-top: 22px;
+    vertical-align: middle;
+    padding:23px 0 0 19px;
+}
+
+.bar-subheader {
+    border-bottom: none;
+}
+
+.bar-footer {
+    padding: 10px 10px 0 10px;
+    height: 64px;
+    display: inline;
+    text-align: center;
+}
+
+.has-subheader {
+    /*top: 100px !important;*/
+}
+
+.has-footer {
+    bottom: 62px;
+}
+
+#slider {
+    margin: 0 18px 0 18px;
+    display: block;
+}
+
+.slider-title {
+    display: block;
+    color: #969696;;
+}
+
+.noUi-connect {
+    background: #007118 !important;
+}
+
+.tooltip {
+    border-radius: 2px;
+    display: block;
+    opacity: .9;
+    color: #fff;
+    background: #007118;
+    padding: 2px 4px;
+    margin-top: -22px;
+    width:40px;
+    text-align: center;
+    margin-left: -4px;
+    font-size: 13px;
+}
