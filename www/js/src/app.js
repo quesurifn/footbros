@@ -199,7 +199,7 @@ var App = React.createClass({
                     <div className="row">
                         <div className="center-block trim">
                             <SearchBar searchKey={this.state.searchKey} searchKeyChange={this.searchKeyChangeHandler}/>
-                            <RangeSlider label="% alcohol" min={0} max={26} step={.5} onChange={this.rangeChangeHandler}/>
+                            <RangeSlider label="Difficulty Level" min={0} max={26} step={.5} onChange={this.rangeChangeHandler}/>
                         </div>
                     </div>
                 </div>

@@ -27,7 +27,9 @@ angular.module('explorer.product', [])
         };
     })
 
-    .controller('ProductListCtrl', function ($scope, $rootScope, $ionicScrollDelegate, Product) {
+
+
+    .controller('ProductListCtrl', function ($scope, $rootScope, $ionicScrollDelegate, $ionicSideMenuDelegate, Product) {
 
         $scope.products = [];
 
@@ -95,6 +97,10 @@ angular.module('explorer.product', [])
             );
         });
         $slider.on({change: $scope.loadData});
+
+        $scope.toggleLeft = function() {
+          $ionicSideMenuDelegate.toggleLeft();
+        };
 
     })
 

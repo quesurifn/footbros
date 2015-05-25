@@ -23,7 +23,7 @@ var SearchBar = React.createClass({displayName: "SearchBar",
         return (
             React.createElement("div", {className: "search-wrapper"}, 
                 React.createElement("input", {type: "search", ref: "searchKey", className: "form-control", 
-                    placeholder: "Enter a partial beer, style, or brewery name", 
+                    placeholder: "Enter a move or player name", 
                     value: this.props.searchKey, 
                     onChange: this.searchKeyChangeHandler}), 
                 React.createElement("button", {className: "btn btn-link"}, React.createElement("span", {className: "glyphicon glyphicon-remove", "aria-hidden": "true", onClick: this.clearText}))
@@ -199,7 +199,7 @@ var App = React.createClass({displayName: "App",
                     React.createElement("div", {className: "row"}, 
                         React.createElement("div", {className: "center-block trim"}, 
                             React.createElement(SearchBar, {searchKey: this.state.searchKey, searchKeyChange: this.searchKeyChangeHandler}), 
-                            React.createElement(RangeSlider, {label: "% alcohol", min: 0, max: 26, step: .5, onChange: this.rangeChangeHandler})
+                            React.createElement(RangeSlider, {label: "Difficulty Level", min: 0, max: 26, step: .5, onChange: this.rangeChangeHandler})
                         )
                     )
                 ), 
