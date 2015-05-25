@@ -3,7 +3,7 @@ body {
 }
 
 .noUi-connect {
-    background: #A61103 !important;
+    background: #007118 !important;
     /*background: #F25C05 !important;*/
 }
 
@@ -13,7 +13,7 @@ body {
     display: block;
     opacity: .9;
     color: #fff;
-    background: #A61103;
+    background: #007118;
     /*background: #F25C05;*/
     padding: 2px 4px;
     margin-top: -22px;
@@ -63,7 +63,7 @@ a:active {
 }
 
 .navbar-default {
-    background: #F2C335 !important;
+    background: #007118 !important;
     border: none;
     font-family: 'Yanone Kaffeesatz', 'Open Sans', sans-serif;
     font-size: 32px;
@@ -125,10 +125,12 @@ a:active {
 
 .img-wrapper {
     height: 150px;
-    width: 60px;
+    width: 150px;
     float: left;
     background-repeat: no-repeat;
+background-size:100px 100px;
 }
+
 
 .icon {
     height: 16px !important;
