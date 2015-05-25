@@ -2,7 +2,7 @@ angular.module('explorer', ['ionic', 'explorer.product'])
 
     .run(function ($ionicPlatform, $rootScope) {
 
-        $rootScope.server = "http://localhost:5000";
+        $rootScope.server = "http://ec2-54-84-169-32.compute-1.amazonaws.com:9000";
 
         $ionicPlatform.ready(function () {
             if (window.StatusBar) {
