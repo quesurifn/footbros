@@ -4,7 +4,7 @@ var express = require('express'),
     products = require('./server/products'),
     app = express();
 
-app.set('port', process.env.PORT || 9000);
+app.set('port', process.env.PORT || 80);
 
 app.use(compression());
 
