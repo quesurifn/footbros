@@ -6,9 +6,9 @@ var express = require('express'),
     io = require('./server/socket.io/lib/index'),
     app = express();
 
+app.set('port', process.env.PORT || 80);
     var io = io.listen(server);
 
-app.set('port', process.env.PORT || 5000);
 
 app.use(compression());
 app.use('/', express.static(__dirname + '/www'));
@@ -23,7 +23,6 @@ app.listen(app.get('port'), function (socket) {
 	    });
 	});
     console.log('Express server listening on port ' + app.get('port'));
-    console.log('Socket.io Running');
-
 });
+
 
