@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 beat it assmunchers
 
 
@@ -11,9 +12,15 @@ add active admin to rails app
 
 get sprangular running
 =======
+=======
+>>>>>>> 46b755f501b8b555844a02b55c66dfa96a337e0c
 #
 install postgres
 
 #
+<<<<<<< HEAD
+npm install
+>>>>>>> 46b755f501b8b555844a02b55c66dfa96a337e0c
+=======
 npm install
 >>>>>>> 46b755f501b8b555844a02b55c66dfa96a337e0c
