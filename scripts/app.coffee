@@ -49,21 +49,21 @@ Franchino.config ($stateProvider, $urlRouterProvider, $locationProvider, $httpPr
       url: '/login'
       templateUrl: 'login.html'
       controller: 'LoginCtrl')
-    
+
     .state('app.products',
       url: '/products'
       views:
         menuContent:
           templateUrl: 'product-list.html'
           controller: 'ProductListCtrl')
-    
+
     .state 'app.product-detail',
       url: '/product/:name/:brewery/:alcohol/:tags/:video'
       views:
         menuContent:
           templateUrl: 'product-detail.html'
           controller: 'ProductDetailCtrl'
-          
+
     .state 'app.intro',
       url: '/intro',
       views:
@@ -235,6 +235,19 @@ Franchino.config ($stateProvider, $urlRouterProvider, $locationProvider, $httpPr
 
          config
 
+  authProvider.on "loginSuccess", ($location, profilePromise, idToken, store, refreshToken) ->
+    profilePromise.then (profile) ->
+      store.set "profile", profile
+      store.set "token", idToken
+
+      store.set 'profile', profile
+      store.set 'token', idToken
+      store.set 'refreshToken', refreshToken
+      $state.go 'app.home'
+
+  authProvider.on "loginFailure", ($location, error) ->
+
+
 Franchino.run ($rootScope, auth, store) ->
   $rootScope.$on '$locationChangeStart', ->
     if !auth.isAuthenticated
@@ -267,7 +280,7 @@ Franchino.factory 'Docs', (Socket) ->
   service
 
 Franchino.controller 'HomeCtrl', ($scope) ->
-  
+
 Franchino.controller 'ContactSheetCtrl', ($scope, $ionicActionSheet) ->
   $scope.showActionsheet = ->
     $ionicActionSheet.show
@@ -312,7 +325,7 @@ Franchino.controller "SlidesTapOneCtrl", ($scope) ->
 
 Franchino.controller "SlidesTapTwoCtrl", ($scope) ->
   $scope.date = 'OCTOBER 2014'
-  $scope.title = 'Desktop and mobile web friendly marketing website' 
+  $scope.title = 'Desktop and mobile web friendly marketing website'
   $scope.images = [
     {
       "alt" : "Some alt text",
@@ -324,7 +337,7 @@ Franchino.controller "SlidesTapTwoCtrl", ($scope) ->
 
 Franchino.controller "SlidesCpgCtrl", ($scope) ->
   $scope.date = 'JULY 2014'
-  $scope.title = 'Identity, full-stack MVP, and marketing website for a new CPG eDistribution company' 
+  $scope.title = 'Identity, full-stack MVP, and marketing website for a new CPG eDistribution company'
   $scope.images = [
     {
       "alt" : "Some alt text",
@@ -461,14 +474,14 @@ Franchino.controller "BlogCtrl", ($scope) ->
       "heading" : "If I could have one wish; I get to use this method when designing your consumer journey funnel.",
       "authorimg" : "/img/frank.png",
       "img" : "/img/dec/ux_board.jpg",
-      "blob" : "So after a bunch of ethnographic studies from persona matches I gather in-person, I get to fill a wall up with key things people said, felt, heard - motivators, barriers, questions, attitudes and such. I then group these post-it thoughts in various ways, looking for patterns, sentiment, new ideas. I then take this rich data and develop a what could be branding, a landing page or an email - with what I call, an inverted pyramid approach to content, where addressing the most important things found in the user research get addressed in a heriarchical order. I create 5-6 iterations of the landing page and re-run them through a second group of participants, stakeholders and friends. I then take even more notes on peoples speak-aloud reactions to the landing pages. After this, I'm ready to design the final copy and pages for your funnel." 
+      "blob" : "So after a bunch of ethnographic studies from persona matches I gather in-person, I get to fill a wall up with key things people said, felt, heard - motivators, barriers, questions, attitudes and such. I then group these post-it thoughts in various ways, looking for patterns, sentiment, new ideas. I then take this rich data and develop a what could be branding, a landing page or an email - with what I call, an inverted pyramid approach to content, where addressing the most important things found in the user research get addressed in a heriarchical order. I create 5-6 iterations of the landing page and re-run them through a second group of participants, stakeholders and friends. I then take even more notes on peoples speak-aloud reactions to the landing pages. After this, I'm ready to design the final copy and pages for your funnel."
     },
     {
       "date" : "Posted by Franchino on December 9, 2014",
       "heading" : "Did I even belong here?",
       "authorimg" : "/img/frank.png",
       "img" : "/img/dec/ucla.jpg",
-      "blob" : "This coming weekend there's probably a hackathon going on in your city. Some of them are getting really big. I wasn't registered for LA Hacks this summer. I don't even know how I ended up there on a Friday night, but when I saw what was going on, I grabbed a chair and started hacking away. Worried I had just snuck in the back door and started competing, my ride left and there I was, for the next two days. That's right. I snuck in the back of LA Hacks last summer at UCLA and hacked with kids 10 years younger than me. I couldn't miss it. I was floored when I saw how many people were in it. Me, being the mischevious hacker I am, I thought if I used the energy of the environment to my advantage, I could build something cool. Long story short, let me just say, that if you have been having a hard time launching, sign up for a hackathon. It's a guaranteed way to over-compensate for your constant failure to launch. More on what happened when I took the stage by surprise and got booted later..." 
+      "blob" : "This coming weekend there's probably a hackathon going on in your city. Some of them are getting really big. I wasn't registered for LA Hacks this summer. I don't even know how I ended up there on a Friday night, but when I saw what was going on, I grabbed a chair and started hacking away. Worried I had just snuck in the back door and started competing, my ride left and there I was, for the next two days. That's right. I snuck in the back of LA Hacks last summer at UCLA and hacked with kids 10 years younger than me. I couldn't miss it. I was floored when I saw how many people were in it. Me, being the mischevious hacker I am, I thought if I used the energy of the environment to my advantage, I could build something cool. Long story short, let me just say, that if you have been having a hard time launching, sign up for a hackathon. It's a guaranteed way to over-compensate for your constant failure to launch. More on what happened when I took the stage by surprise and got booted later..."
     }
   ]
 
@@ -537,16 +550,16 @@ Franchino.directive 'mySlideshow', ->
   restrict: 'AC'
   link: (scope, element, attrs) ->
     config = angular.extend(
-      slides: '.slide',  
+      slides: '.slide',
     scope.$eval(attrs.mySlideshow))
     setTimeout (->
       $(element).cycle ->
-        fx:     'fade', 
+        fx:     'fade',
         speed:  'fast',
-        next:   '#next2', 
+        next:   '#next2',
         prev:   '#prev2',
         caption: '#alt-caption',
         caption_template: '{{images.alt}}',
         pause_on_hover: 'true'
-          
+
     ), 0
