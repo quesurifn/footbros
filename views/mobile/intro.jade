@@ -1,0 +1,27 @@
+style.
+  .button {
+  color:white !important
+  }
+ion-view#intro
+  ion-slide-box(on-slide-changed='slideChanged(index)')
+    ion-slide(style="background-image:url(/img/intro_1.jpg);-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;")
+      br
+      br
+      br
+      br
+      br
+      br
+      br
+      br
+      br
+      br
+      br
+      br
+      br
+      button.button.button-positive.button-clear.no-animation(ng-click='startApp()', ng-show='!slideIndex')
+      button.button.button-positive.button-clear.no-animation(ng-click='previous()', ng-show='slideIndex > 0') Back
+      button.button.button-positive.button-clear.no-animation(ng-click='next()', ng-show='slideIndex != 3', style='position:relative;left:-20px;') Tour
+      button.button.button-positive.button-clear.no-animation(ng-click='startApp()', ng-show='slideIndex == 3') Start
+    ion-slide(style="background-image:url(/img/intro_2.jpg);-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;")
+    ion-slide(style="background-image:url(/img/intro_3.jpg);-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;")
+    ion-slide(style="background-image:url(/img/intro_4.jpg);-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;")

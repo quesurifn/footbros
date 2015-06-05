@@ -1,0 +1,8 @@
+div(ng-controller='SlidesMonthlysCtrl')
+	h6(ng-model='date', style='color:#fff !important') {{date}}
+	h2(ng-model='title', style='color:#fff !important') {{title}}
+	.slide
+		.slider(style='text-align:center;', class='cycle-slideshow')
+			#A(my-slideshow='')
+				img.slide(ng-src='{{image.url}}', alt="{{image.alt}}", ng-repeat='image in images')
+				#alt-caption(class='center')

@@ -1,0 +1,26 @@
+ion-view(title='{{doc.player.name}}')
+  ion-content(has-header="true" padding="true")
+    .list
+      pre.item
+        | {{step | json}}
+
+      section.image.list(ng-if="step.type == 'photo'")
+        .item
+          figure
+            img(ng-src='{{step.url}}')
+            figcaption(ng-bind='step.caption')
+
+      section.video(ng-if="step.type == 'video'")
+        iframe#player.item(type="text/html" width="640" height="390"
+          ng-src="{{step.url}}"
+          allowfullscreen
+          frameborder="0")
+
+      section.dialog(ng-if="step.type == 'dialog'")
+        .item.message(ng-repeat='message in messages' ng-bind='message')
+        .item.typing(ng-show='typing') ...
+
+      nav.item
+        a(ng-href="#/docs/{{doc.permalink}}/{{step.index-1}}" ng-hide='index == 0') Back
+        | &nbsp;
+        a(ng-href="#/docs/{{doc.permalink}}/{{step.index+1}}" ng-show='hasMoreSteps()') Next

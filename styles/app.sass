@@ -1,0 +1,607 @@
+//colors
+$regal: #074e68
+$color_shark_approx: #242424
+$gallery: #efefef
+$color_rio_grande_approx: #b7d400
+$white: #fff
+$black: #000
+$dark_blue: #202b39
+
+//fonts
+$font_0: Montserrat
+$font_1: serif
+$font_2: Raleway
+$font_3: (sans-serif !important)
+$font_4: Roboto
+$font_5: (serif !important)
+
+//colors
+$gallery: #efefef
+$color_ebony_clay_approx: #202b39
+$black:  #000
+$color_pear_approx: #d2db31
+$color_trout_approx: #474e5d
+$white: #fff
+$color_calypso_approx: #256d84
+
+//fonts
+$font_0: Roboto
+$font_1: (sans-serif !important)
+
+nav
+  .small
+    a
+      background-color: #002f47
+      color: #fff
+      padding: 13px
+      position: relative
+      top: -20px
+
+.top-bar
+  margin-top: -20px
+
+.footer_area
+  section
+    background-color: #efefef !important
+  .row
+    background-color: #efefef !important 
+  .press_strip
+    img
+      width: 20%
+
+.bio-text
+  p
+    padding: 20px 0 0 0
+
+.tap-footer-bottom
+  background-color: #000
+
+.top-bar 
+  background-color: $gallery !important
+
+.top-bar-section 
+  a 
+    background-color: $gallery !important
+    color: $color_ebony_clay_approx !important
+    font-family: $font_0, $font_1
+    font-size: 15px !important
+
+  .has-dropdown a:after 
+    display: none
+    width: 0
+    height: 0
+    border: inset 1px !important
+    margin-top: 0 !important
+    padding-right: -10px
+    position: absolute
+    top: 50%
+
+
+.has-form 
+  background-color: $gallery !important
+
+.roboto 
+  font-family: $font_0, $font_1
+  font-size: 18px !important
+
+.dark 
+  background-color: $color_trout_approx !important
+  color: $white !important
+
+.bios 
+  padding-top: 50px
+  .row 
+    padding: 0 0 80px 0
+
+
+.bio-pull-left 
+
+.button.large 
+  width: 350px
+  margin-top: 20px
+  background: none !important
+  border: 1px solid $black
+  color: $color_ebony_clay_approx !important
+  &:hover 
+    width: 350px
+    margin-top: 20px
+    background-color: $color_pear_approx
+
+
+a.button 
+  background-color: $color_pear_approx
+  color: $color_calypso_approx
+  &:hover 
+    background-color: $color_pear_approx
+    color: $color_calypso_approx
+
+
+//@extend-elements
+//original selectors
+//, .floatingctp img
+.extend_1 
+  width: 100%
+  position: relative
+  right: 0
+  bottom: 0
+  top: 0
+  left: 0
+
+
+//original selectors
+//, .floatingctp img
+.extend_2 
+  width: 100%
+  position: absolute
+  right: 0
+  bottom: 0
+
+
+
+#manager-hero 
+  background: url(../img/user-laptop.jpg) $regal
+  background-size: cover
+  background-repeat: no-repeat
+  height: 340px
+  margin-left: -30px
+  background-position: 0 -70px
+  position: relative
+  padding: 0 20px
+  h1 
+    font-size: 4em
+    color: $white
+    margin-top: -12%
+    text-align: left
+    font-weight: 700
+    margin-bottom: 0
+    line-height: 100%
+    text-align: center
+    letter-spacing: -3px
+    font-family: $font_2, $font_3
+    //If you use compass, instead of the line below you could use +text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+    text-shadow: 0 1px $black
+
+
+.foot-cta 
+  background-color: $color_shark_approx
+  margin-top: -5%
+  padding: 20px 0 0
+
+.foot-cta-btn 
+  background: $gallery !important
+
+.ctp-hero 
+  background-color: $color_rio_grande_approx
+  background-size: cover
+
+@media screen and (max-width: 768px) 
+  .homepage-hero h3 
+    font-size: 18px
+    line-height: 28px
+    font-family: $font_0, $font_1
+
+
+@media screen and (max-width: 1024px) 
+  .homepage-hero 
+    height: 500px
+
+
+@media only screen and (max-width: 40em) 
+   
+
+  .homepage-hero .floatingphone img 
+    width: 100%
+    position: relative
+    right: 0
+    bottom: 0
+    top: 0
+    left: 120px
+
+  .floatingctp img 
+
+
+
+@media (max-width: 900px) 
+  .homepage-hero .row 
+    margin: 45px 0 0 30px
+
+
+// mobile specific styles - may want to break out later
+
+
+// start official HTML/CSS Francke Jones bia bia
+
+body > ng-include > ion-nav-view > div > ion-pane > header
+  background-color: transparent !important
+  border: 0px solid black !important
+
+// all the sets of desktop and mobile pages in pairs below
+
+// home page - web and mobile
+#page-home 
+  background-color: #efefef
+  margin: -80px 0 0px 0
+  padding: 40px 0 0 0
+  background-size: cover
+  min-height: 600px
+  .row 
+    padding: 10px 0 20px
+
+  h1 
+    font-size: 4em !important
+    margin: 0 auto
+    color: $white
+    text-align: left
+    font-weight: 700
+    margin-bottom: 0
+    letter-spacing: -3px
+    line-height: 100%
+    font-family: $font_2, $font_3
+    padding: 10% 0 0
+
+  h4 
+    font-size: 1.35em
+    color: $white
+    font-weight: 300
+
+  h3 
+    color: $white
+    text-align: left
+    font-family: $font_4, $font_5
+    font-size: 1.4rem
+    font-family: Helvetica, Roboto, Arial, 'sans-serf'
+
+  .floatingphone img 
+    max-width: 30%
+    position: absolute
+    right: 100px
+    top: 30px
+
+  .floatingctp img 
+    position: absolute
+    top: 50px
+    margin-top: 4%
+    padding-left: 20%
+    max-width: 85%
+    right: 0%
+    overflow: hidden
+
+#boxes-home
+  margin-top: -4%
+  background-color: #efefef
+  padding-bottom: 40px
+  .boxyfoxy
+    span
+      font-weight: 900
+
+#main-content
+  h2
+    padding-top: 0px
+    margin: 20px 0 20px 0 
+    text-align: center
+    margin-top: -50px !important
+  h3
+    padding-top: 80px
+    margin: 50px 0 20px 0 
+    text-align: center
+  h6
+    height: 20px
+    text-align: center
+    margin-bottom: 60px
+
+
+  .centered-text
+    a
+      margin: 20px 0 20px 0
+
+.slider-pager
+  margin-top: 40px !important
+
+.mobile-heros
+  h1 
+    font-size: 2.6em !important
+    margin: -40px 0 0 0
+    color: $dark_blue !important
+    text-align: left
+    font-weight: 700
+    letter-spacing: -2px
+    line-height: 100%
+    font-family: $font_2, $font_3
+    padding: 10% 0 0
+    text-align: center
+  h2
+    padding: 30px 20px 0px 25px !important
+    font-size: 2em
+    text-align: center
+  h3
+    text-align: center
+  li
+    font-size: 14px !important
+    line-height: 22px
+
+  p
+    font-size: 16px !important
+    font-family: Roboto !important
+    font-weight: 300 !important
+    padding: 30px
+    line-height: 24px
+
+
+// how page
+
+#page-how
+  img
+    .dot
+      text-align: center !important
+
+
+// about page
+#page-about
+  margin-top: -80px
+  height: 60%
+  background: #b6d600
+  background-size: cover
+  h1 
+    font-size: 4em
+    color: $white
+    text-align: left
+    font-weight: 700
+    margin-bottom: 0
+    text-align: center
+    letter-spacing: -3px
+    font-family: $font_2, $font_3
+    text-shadow: 0 1px $black
+    padding: 10% 0
+
+/* products
+#page-products
+  input
+    &[type=search], &[type=text], &[type=password], &[type=datetime], &[type=datetime-local], &[type=date], &[type=month], &[type=time], &[type=week], &[type=number], &[type=email], &[type=url], &[type=tel], &[type=color]
+      display: block
+      padding-top: 2px
+      padding-left: 15px
+      margin-left: -10px
+      height: 34px
+      color: #111
+      vertical-align: middle
+      font-size: 14px
+      line-height: 16px
+      width: 400px
+      background-color: #eee
+
+  textarea
+    display: block
+    padding-top: 2px
+    padding-left: 15px
+    margin-left: -10px
+    height: 34px
+    color: #111
+    vertical-align: middle
+    font-size: 14px
+    line-height: 16px
+    width: 400px
+    background-color: #eee
+    
+  h1
+    font-size: 22px
+
+  .bar.bar-energized
+    border-color: #007118
+    background-color: #007118
+    color: #fff
+
+  .ion-close-round::before
+    font-size: 18px !important
+
+  .item .badge
+    height: 38px
+    width: 38px
+    font-size: 17px
+    font-weight: 600
+    background: #fff
+    color: #007118
+    display: inline
+    padding: 11px 0 0 0
+    text-align: center
+    right: 14px !important
+
+  .bubble
+    background: #007118
+    height: 68px
+    width: 68px
+    border-radius: 34px
+    font-size: 20px
+    color: #ffffff
+    display: inline-block
+    margin-left: 26px
+    padding-top: 22px
+    vertical-align: middle
+    padding: 23px 0 0 19px
+
+  .bar-subheader
+    border-bottom: none
+
+  .bar-footer
+    padding: 10px 10px 0 10px
+    height: 64px
+    display: inline
+    text-align: center
+
+  .has-subheader
+    /*top: 100px !important;
+
+  .has-footer
+    bottom: 62px
+
+  #slider
+    margin: 0 18px 0 18px
+    display: block
+
+  .slider-title
+    display: block
+    color: #969696
+
+  .noUi-connect
+    background: #007118 !important
+
+  .tooltip
+    border-radius: 2px
+    display: block
+    opacity: .9
+    color: #fff
+    background: #007118
+    padding: 2px 4px
+    margin-top: -22px
+    width: 40px
+    text-align: center
+    margin-left: -4px
+    font-size: 13px
+
+  /* end products
+
+#mast-about
+  h3
+    margin-top: 5%
+    padding: 5%
+  p
+    padding: 20px 50px 0 50px
+    font-size: 16px !important
+    font-family: Roboto !important
+    font-weight: 300 !important
+    line-height: 24px
+  hr
+    margin: 60px 0 20px 0
+
+#page-about-mobile
+  margin-top: 0px
+  background: #efefef
+  text-align: center
+  h1
+    padding-top: 50px
+    text-align: center
+
+#mast-about-mobile
+  background: #efefef
+  text-align: left
+  padding: 0px 30px 0 30px
+
+
+#bios
+  h5
+    margin: 0px 0 10px 0
+    padding: 0px 0 10px 0
+    height: 10px
+    font-size: 1.3em
+  p
+    font-size: 16px !important
+    font-family: Roboto !important
+    font-weight: 300 !important
+    padding: 10px
+    line-height: 24px
+
+  h3
+    margin-top: 0%
+    padding: 5%
+    text-align: center !important
+
+  .clear
+    padding: 120px 0 40px 0
+    float: clear
+
+// contact page
+#page-contact
+  background-color: $regal
+
+  p
+    color: $regal
+
+#form-contact
+  margin: 20px 0 0 0
+  text-align: center
+  padding: 20px 0 0 12px
+  .large-12
+    padding: 0 25% 0 25%
+  label
+    text-align: left !important
+
+  .mobile
+    h2
+      color: $white !important
+    p
+      color: $white !important
+    label
+      color: $white !important
+      text-align: left !important
+
+// blog page
+
+// press page
+
+
+#page-press
+  margin-top: -80px
+  height: 40%
+  background: #44acd3
+  background-size: cover
+  h1 
+    font-size: 4em
+    color: $white
+    text-align: left
+    font-weight: 700
+    margin-bottom: 0
+    text-align: center
+    letter-spacing: -3px
+    font-family: $font_2, $font_3
+    text-shadow: 0 1px $black
+
+// platform mobile page
+#intro
+  .slider
+    height: 100% 
+
+  .slider-slide
+    padding-top: 80px
+    color: #000
+    background-color: #fff
+    text-align: center
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
+    font-weight: 300
+
+  #logo
+    margin: 30px 0px
+
+  #list
+    width: 170px
+    margin: 30px auto
+    font-size: 20px
+    ol
+      margin-top: 30px
+      li
+        text-align: left
+        list-style: decimal
+        margin: 10px 0px
+
+  .button.ng-hide
+    display: none
+
+
+#page-platform-mobile
+  .slider-slide
+    padding-top: 40px
+    text-align: center
+
+  .slider-pager-page
+
+  h2
+    padding: 50px 0 0 20px
+    width: 100%
+
+  .shim
+    margin-top: -30px
+
+  p
+    padding: 20px
+
+  a
+    color: #000 !important
+

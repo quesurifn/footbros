@@ -1,0 +1,38 @@
+style.
+  .row {
+  text-align:left !important;
+  }
+  h6 {
+  text-align:left !important;
+  height:60px !important;
+  padding:0px !important;
+  margin:0px !important;
+  }
+  h2 {
+  text-align:left !important;
+
+  }
+
+
+section#main-content.first(ng-controller='BlogCtrl', style='background-color: #efefef;margin-top:-80px;padding-top:80px;', ng-repeat='article in articles')
+  
+  .row
+    .large-12.columns.centered-text
+      .row
+        .large-1.columns.small-3
+          img(ng-src='{{article.authorimg}}')
+        .large-11.columns
+          h6 {{article.date}}
+          br
+          h2 {{article.heading}}
+          br
+          img(ng-src='{{article.img}}')
+          br
+          br
+          br  
+          p(ng-bind-html-unsafe='{{article.blob}}') {{article.blob}}
+          a(ng-href='{{article.resource1}}') {{article.resource1}}
+          br
+          a(ng-href='{{article.resource2}}') {{article.resource2}}
+          ul.inline-list
+    

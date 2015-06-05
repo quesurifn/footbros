@@ -1,0 +1,16 @@
+ion-view#page-products(view-title='', ng-controller='ProductListCtrl')
+  .bar.bar-subheader.item-input-inset
+    label#search-input
+      i.icon.ion-search.placeholder-icon
+      input#searchKey(type='search', placeholder='Search', autocorrect='off', ng-model='searchKey', ng-change='loadData()')
+    button.button.button-clear.icon.ion-close-round(ng-click='clearSearch()')
+  ion-content#content.has-header.has-subheader(delegate-handle='myScroll')
+    ion-list
+      ion-item(ng-repeat='product in products', href='#/product/{{product.name}}/{{product.brewery}}/{{product.alcohol}}/{{product.tags}}/{{product.video}}')
+        img(src='/pics/{{product.image}}', width='100px', height='100px', style='float:left;margin:-20px 13px -20px -20px;')
+        span(ng-bind='product.name')
+        p
+          i.icon.ion-pricetags.placeholder-icon
+          span(ng-bind='product.brewery')
+        span.badge.badge-assertive(style='margin:12px 10px 0 0;', ng-bind='formatAlcoholLevel(product.alcohol)')
+    ion-infinite-scroll(ng-if='isMoreData()', on-infinite='loadMoreData()', distance='1%')

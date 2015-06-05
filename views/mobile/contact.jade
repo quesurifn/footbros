@@ -1,0 +1,15 @@
+// - start ionic views
+ion-view#page-contact(title='')
+  ion-content(padding='true', scroll='true')
+    section#form-contact
+      .mobile
+        .row
+          .large-10
+            h2  Register for access to Tapcentive
+            p   To help you get up and running with Tapcentive, fill out this form so we can follow up with the next steps.
+            br
+        .row
+          .large-6.columns
+            // - this is where we start responsive, shared content
+            ng-include(src="'shared/contact.html'")
+          

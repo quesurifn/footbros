@@ -1,0 +1,28 @@
+{
+  "name": "Footbros",
+  "main": "index.js",
+  "version": "0.0.0",
+  "authors": [
+    "Francke Jones <francke.jones@tapcentive.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "~2.1.15",
+    "devicejs": "~0.1.16",
+    "angular-ui-router": "~0.2.12",
+    "ionic": "~1.0.0-beta.13",
+    "auth0-angular": "~4.0.5",
+    "a0-angular-storage": ">= 0.0.6",
+    "angular-jwt": ">= 0.0.4"
+  },
+  "devDependencies": {
+    "ionic": "driftyco/ionic-bower#1.0.0"
+  }
+}

@@ -1,0 +1,13 @@
+2015-06-01 11:57:58.759 tapcentive[4886:3951156] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/nonche/Library/Developer/CoreSimulator/Devices/E9FDB83E-C97D-4926-9120-70CF557D0F2A/data/Containers/Data/Application/3A935032-F8ED-4CEE-B369-EE9242929868/Library/Cookies/Cookies.binarycookies
+2015-06-01 11:57:58.833 tapcentive[4886:3951156] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-01 11:57:58.833 tapcentive[4886:3951156] Multi-tasking -> Device: YES, App: YES
+2015-06-01 11:57:58.835 tapcentive[4886:3951156] Unlimited access to network resources
+2015-06-01 11:57:59.162 tapcentive[4886:3951156] Resetting plugins due to page load.
+2015-06-01 11:58:00.227 tapcentive[4886:3951156] Finished load of: file:///Users/nonche/Library/Developer/CoreSimulator/Devices/E9FDB83E-C97D-4926-9120-70CF557D0F2A/data/Containers/Bundle/Application/A3D1DFC0-7082-4A04-9DEF-B7F62D111FE0/tapcentive.app/www/index.html
+2015-06-04 08:53:09.918 tapcentive[4886:5315667] Terminating since there is no system app.
+2015-06-04 09:18:06.198 tapcentive[3547:99834] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/nonche/Library/Developer/CoreSimulator/Devices/E9FDB83E-C97D-4926-9120-70CF557D0F2A/data/Containers/Data/Application/A0363F8D-7F5F-4EC0-A80D-F38BB1739C2E/Library/Cookies/Cookies.binarycookies
+2015-06-04 09:18:06.403 tapcentive[3547:99834] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-04 09:18:06.404 tapcentive[3547:99834] Multi-tasking -> Device: YES, App: YES
+2015-06-04 09:18:06.417 tapcentive[3547:99834] Unlimited access to network resources
+2015-06-04 09:18:06.785 tapcentive[3547:99834] Resetting plugins due to page load.
+2015-06-04 09:18:06.896 tapcentive[3547:99834] Finished load of: file:///Users/nonche/Library/Developer/CoreSimulator/Devices/E9FDB83E-C97D-4926-9120-70CF557D0F2A/data/Containers/Bundle/Application/A7378A1A-96D1-4DE9-A3B3-A35B21FC7ABA/tapcentive.app/www/index.html

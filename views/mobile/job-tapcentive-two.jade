@@ -1,0 +1,8 @@
+ion-view#page-platform-mobile(style='background-color:#efefef')
+  ng-include(src="'actionsheet.html'")
+  ion-content(ng-controller='SlidesTapTwoCtrl', padding='true', scroll='true', style='padding:0px;margin:0px;')
+    h2(ng-model='title') {{title}}
+    ion-slide-box(show-pager='false', class='shim')
+      ion-slide(style='min-height:550px;', ng-repeat='item in images')
+        img(src='{{item.url}}')
+        p(ng-bind-html='item.text') {{item.text}}

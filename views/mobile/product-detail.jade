@@ -1,0 +1,19 @@
+ion-view#page-products(ng-controller='ProductDetailCtrl')
+  ion-nav-bar
+    ion-nav-back-button Back
+  ion-content.card-bg(has-header='true', padding='true')
+    .list.card
+      .item
+        div(style='float:left;')
+          h1 {{product.name }}
+          p {{product.brewery}}
+        div(style='float:right;')
+          span.bubble(style='float:left;', ng-bind='product.alcohol')
+      .item.item-body(style='text-align: center')
+        iframe(width='100%', height='300px', ng-src='{{betterUrl}}', frameborder='0', allowfullscreen='')
+      ion-item(ng-click='setSearchKey(product.brewery)')
+        span(ng-bind='product.brewery')
+      ion-item(ng-repeat='tag in tags', ng-click='setSearchKey(tag)')
+        span(ng-bind='tag')
+      ion-item
+        a(href='/login') More Videos

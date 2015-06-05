@@ -1,0 +1,18 @@
+ion-view#page-about-mobile(title='')
+  ion-content(padding='true', scroll='true')
+    section
+      .row
+        .large-12.columns
+          h1(ng-bind-html='copy.about.heading')
+            
+    section#mast-about-mobile
+      .row
+        .large-12
+          a(name='who-we-are')
+          h3(ng-bind-html='copy.about.sub_heading')
+          br
+          div(ng-bind-html='copy.about.copy')
+          br
+          hr.headspace20
+
+    ng-include(src="'shared/bios.html'")

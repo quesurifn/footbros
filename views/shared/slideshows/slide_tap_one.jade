@@ -1,0 +1,8 @@
+div(ng-controller='SlidesTapOneCtrl')
+	h6(ng-model='date') {{date}}
+	h2(ng-model='title') {{title}}
+	.slide
+		.slider(style='text-align:center;', class='cycle-slideshow')
+			#A(my-slideshow='')
+				img.slide(ng-src='{{image.url}}', alt="{{image.alt}}", ng-repeat='image in images')
+				#alt-caption(class='center')
