@@ -1,4 +1,3 @@
 module.exports = {
-
-    databaseURL: process.env.DATABASE_URL || "postgres://nonche@localhost/beers"
+    databaseURL: process.env.DATABASE_URL || "postgres://postgres:password@localhost/rc1"
 };
