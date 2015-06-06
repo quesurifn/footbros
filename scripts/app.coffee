@@ -237,9 +237,6 @@ Franchino.config ($stateProvider, $urlRouterProvider, $locationProvider, $httpPr
 
   authProvider.on "loginSuccess", ($location, profilePromise, idToken, store, refreshToken) ->
     profilePromise.then (profile) ->
-      store.set "profile", profile
-      store.set "token", idToken
-
       store.set 'profile', profile
       store.set 'token', idToken
       store.set 'refreshToken', refreshToken
