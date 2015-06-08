@@ -202,6 +202,7 @@ Franchino.config ($stateProvider, $urlRouterProvider, $locationProvider, $httpPr
       authProvider.init
         domain: AUTH0_DOMAIN
         clientID: AUTH0_CLIENT_ID
+        sso: true
         loginState: 'products'
 
     $urlRouterProvider.otherwise "/products"
@@ -237,10 +238,17 @@ Franchino.config ($stateProvider, $urlRouterProvider, $locationProvider, $httpPr
 
   authProvider.on "loginSuccess", ($location, profilePromise, idToken, store, refreshToken) ->
     profilePromise.then (profile) ->
+      lock = new Auth0Lock('A126XWdJZY715w3B6yVCevpS8tYmPJrj', 'footbros.auth0.com');
+
       store.set 'profile', profile
       store.set 'token', idToken
       store.set 'refreshToken', refreshToken
-      $state.go 'app.home'
+      localStorage.setItem('token', idToken);
+      window.location.href = 'localhost:3000'
+
+  authProvider.on "authenticated", ($location, error) ->
+    $location.url 'localhost:3000'
+
 
   authProvider.on "loginFailure", ($location, error) ->
 
