@@ -12,7 +12,7 @@ server = require('http').Server(app);
 
 io = require('socket.io')(server);
 
-socketHandler = require('./lib/socketHandler');
+socketHandler = require('socketHandler');
 
 server.listen(process.env.PORT || 5000);
 
