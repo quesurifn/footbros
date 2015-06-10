@@ -9,3 +9,5 @@ install postgres
 npm install
 
 gulp coffee    //load scripts
+
+https://github.com/auth0/auth0-sso-sample/tree/master/app2.com
