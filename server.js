@@ -1,3 +1,4 @@
+/*
 var app, compression, express, io, products, server, socketHandler;
 
 express = require('express');
@@ -31,3 +32,32 @@ app.get('/config.json', function(request, response) {
 });
 
 io.on('connection', socketHandler);
+
+*/
+
+var express = require('express');
+var app = express();
+
+compression = require('compression');
+
+products = require('./server/products');
+
+// set the port of our application
+// process.env.PORT lets the port be set by Heroku
+var port = process.env.PORT || 8080;
+
+// set the view engine to ejs
+app.set('view engine', 'ejs');
+
+// make express look in the public directory for assets (css/js/img)
+app.use(express.static(__dirname + '/public'));
+
+app.use(compression());
+
+app.get('/products', products.findAll);
+
+app.get('/products/:id', products.findById);
+
+app.listen(port, function() {
+    console.log('Our app is running on http://localhost:' + port);
+});
