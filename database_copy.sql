@@ -10,14 +10,14 @@ SET check_function_bodies = false;
 SET client_min_messages = warning;
 
 --
--- Name: plpgsql; Type: EXTENSION; Schema: -; Owner: 
+-- Name: plpgsql; Type: EXTENSION; Schema: -; Owner:
 --
 
 CREATE EXTENSION IF NOT EXISTS plpgsql WITH SCHEMA pg_catalog;
 
 
 --
--- Name: EXTENSION plpgsql; Type: COMMENT; Schema: -; Owner: 
+-- Name: EXTENSION plpgsql; Type: COMMENT; Schema: -; Owner:
 --
 
 COMMENT ON EXTENSION plpgsql IS 'PL/pgSQL procedural language';
@@ -30,7 +30,7 @@ SET default_tablespace = '';
 SET default_with_oids = false;
 
 --
--- Name: active_admin_comments; Type: TABLE; Schema: public; Owner: nonche; Tablespace: 
+-- Name: active_admin_comments; Type: TABLE; Schema: public; Owner: nonche; Tablespace:
 --
 
 CREATE TABLE active_admin_comments (
@@ -46,8 +46,6 @@ CREATE TABLE active_admin_comments (
 );
 
 
-ALTER TABLE active_admin_comments OWNER TO nonche;
-
 --
 -- Name: active_admin_comments_id_seq; Type: SEQUENCE; Schema: public; Owner: nonche
 --
@@ -60,8 +58,6 @@ CREATE SEQUENCE active_admin_comments_id_seq
     CACHE 1;
 
 
-ALTER TABLE active_admin_comments_id_seq OWNER TO nonche;
-
 --
 -- Name: active_admin_comments_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: nonche
 --
@@ -70,7 +66,7 @@ ALTER SEQUENCE active_admin_comments_id_seq OWNED BY active_admin_comments.id;
 
 
 --
--- Name: admin_users; Type: TABLE; Schema: public; Owner: nonche; Tablespace: 
+-- Name: admin_users; Type: TABLE; Schema: public; Owner: nonche; Tablespace:
 --
 
 CREATE TABLE admin_users (
@@ -90,8 +86,6 @@ CREATE TABLE admin_users (
 );
 
 
-ALTER TABLE admin_users OWNER TO nonche;
-
 --
 -- Name: admin_users_id_seq; Type: SEQUENCE; Schema: public; Owner: nonche
 --
@@ -104,8 +98,6 @@ CREATE SEQUENCE admin_users_id_seq
     CACHE 1;
 
 
-ALTER TABLE admin_users_id_seq OWNER TO nonche;
-
 --
 -- Name: admin_users_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: nonche
 --
@@ -114,7 +106,7 @@ ALTER SEQUENCE admin_users_id_seq OWNED BY admin_users.id;
 
 
 --
--- Name: beer; Type: TABLE; Schema: public; Owner: nonche; Tablespace: 
+-- Name: beer; Type: TABLE; Schema: public; Owner: nonche; Tablespace:
 --
 
 CREATE TABLE beer (
@@ -129,8 +121,6 @@ CREATE TABLE beer (
 );
 
 
-ALTER TABLE beer OWNER TO nonche;
-
 --
 -- Name: beer_id_seq; Type: SEQUENCE; Schema: public; Owner: nonche
 --
@@ -143,8 +133,6 @@ CREATE SEQUENCE beer_id_seq
     CACHE 1;
 
 
-ALTER TABLE beer_id_seq OWNER TO nonche;
-
 --
 -- Name: beer_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: nonche
 --
@@ -153,7 +141,7 @@ ALTER SEQUENCE beer_id_seq OWNED BY beer.id;
 
 
 --
--- Name: brewery; Type: TABLE; Schema: public; Owner: nonche; Tablespace: 
+-- Name: brewery; Type: TABLE; Schema: public; Owner: nonche; Tablespace:
 --
 
 CREATE TABLE brewery (
@@ -161,8 +149,6 @@ CREATE TABLE brewery (
     name text
 );
 
-
-ALTER TABLE brewery OWNER TO nonche;
 
 --
 -- Name: brewery_id_seq; Type: SEQUENCE; Schema: public; Owner: nonche
@@ -176,8 +162,6 @@ CREATE SEQUENCE brewery_id_seq
     CACHE 1;
 
 
-ALTER TABLE brewery_id_seq OWNER TO nonche;
-
 --
 -- Name: brewery_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: nonche
 --
@@ -186,7 +170,7 @@ ALTER SEQUENCE brewery_id_seq OWNED BY brewery.id;
 
 
 --
--- Name: schema_migrations; Type: TABLE; Schema: public; Owner: nonche; Tablespace: 
+-- Name: schema_migrations; Type: TABLE; Schema: public; Owner: nonche; Tablespace:
 --
 
 CREATE TABLE schema_migrations (
@@ -194,10 +178,8 @@ CREATE TABLE schema_migrations (
 );
 
 
-ALTER TABLE schema_migrations OWNER TO nonche;
-
 --
--- Name: users; Type: TABLE; Schema: public; Owner: nonche; Tablespace: 
+-- Name: users; Type: TABLE; Schema: public; Owner: nonche; Tablespace:
 --
 
 CREATE TABLE users (
@@ -217,8 +199,6 @@ CREATE TABLE users (
 );
 
 
-ALTER TABLE users OWNER TO nonche;
-
 --
 -- Name: users_id_seq; Type: SEQUENCE; Schema: public; Owner: nonche
 --
@@ -230,8 +210,6 @@ CREATE SEQUENCE users_id_seq
     NO MAXVALUE
     CACHE 1;
 
-
-ALTER TABLE users_id_seq OWNER TO nonche;
 
 --
 -- Name: users_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: nonche
@@ -443,7 +421,7 @@ SELECT pg_catalog.setval('users_id_seq', 1, true);
 
 
 --
--- Name: active_admin_comments_pkey; Type: CONSTRAINT; Schema: public; Owner: nonche; Tablespace: 
+-- Name: active_admin_comments_pkey; Type: CONSTRAINT; Schema: public; Owner: nonche; Tablespace:
 --
 
 ALTER TABLE ONLY active_admin_comments
@@ -451,7 +429,7 @@ ALTER TABLE ONLY active_admin_comments
 
 
 --
--- Name: admin_users_pkey; Type: CONSTRAINT; Schema: public; Owner: nonche; Tablespace: 
+-- Name: admin_users_pkey; Type: CONSTRAINT; Schema: public; Owner: nonche; Tablespace:
 --
 
 ALTER TABLE ONLY admin_users
@@ -459,7 +437,7 @@ ALTER TABLE ONLY admin_users
 
 
 --
--- Name: beer_pkey; Type: CONSTRAINT; Schema: public; Owner: nonche; Tablespace: 
+-- Name: beer_pkey; Type: CONSTRAINT; Schema: public; Owner: nonche; Tablespace:
 --
 
 ALTER TABLE ONLY beer
@@ -467,7 +445,7 @@ ALTER TABLE ONLY beer
 
 
 --
--- Name: brewery_pkey; Type: CONSTRAINT; Schema: public; Owner: nonche; Tablespace: 
+-- Name: brewery_pkey; Type: CONSTRAINT; Schema: public; Owner: nonche; Tablespace:
 --
 
 ALTER TABLE ONLY brewery
@@ -475,7 +453,7 @@ ALTER TABLE ONLY brewery
 
 
 --
--- Name: users_pkey; Type: CONSTRAINT; Schema: public; Owner: nonche; Tablespace: 
+-- Name: users_pkey; Type: CONSTRAINT; Schema: public; Owner: nonche; Tablespace:
 --
 
 ALTER TABLE ONLY users
@@ -483,56 +461,56 @@ ALTER TABLE ONLY users
 
 
 --
--- Name: index_active_admin_comments_on_author_type_and_author_id; Type: INDEX; Schema: public; Owner: nonche; Tablespace: 
+-- Name: index_active_admin_comments_on_author_type_and_author_id; Type: INDEX; Schema: public; Owner: nonche; Tablespace:
 --
 
 CREATE INDEX index_active_admin_comments_on_author_type_and_author_id ON active_admin_comments USING btree (author_type, author_id);
 
 
 --
--- Name: index_active_admin_comments_on_namespace; Type: INDEX; Schema: public; Owner: nonche; Tablespace: 
+-- Name: index_active_admin_comments_on_namespace; Type: INDEX; Schema: public; Owner: nonche; Tablespace:
 --
 
 CREATE INDEX index_active_admin_comments_on_namespace ON active_admin_comments USING btree (namespace);
 
 
 --
--- Name: index_active_admin_comments_on_resource_type_and_resource_id; Type: INDEX; Schema: public; Owner: nonche; Tablespace: 
+-- Name: index_active_admin_comments_on_resource_type_and_resource_id; Type: INDEX; Schema: public; Owner: nonche; Tablespace:
 --
 
 CREATE INDEX index_active_admin_comments_on_resource_type_and_resource_id ON active_admin_comments USING btree (resource_type, resource_id);
 
 
 --
--- Name: index_admin_users_on_email; Type: INDEX; Schema: public; Owner: nonche; Tablespace: 
+-- Name: index_admin_users_on_email; Type: INDEX; Schema: public; Owner: nonche; Tablespace:
 --
 
 CREATE UNIQUE INDEX index_admin_users_on_email ON admin_users USING btree (email);
 
 
 --
--- Name: index_admin_users_on_reset_password_token; Type: INDEX; Schema: public; Owner: nonche; Tablespace: 
+-- Name: index_admin_users_on_reset_password_token; Type: INDEX; Schema: public; Owner: nonche; Tablespace:
 --
 
 CREATE UNIQUE INDEX index_admin_users_on_reset_password_token ON admin_users USING btree (reset_password_token);
 
 
 --
--- Name: index_users_on_email; Type: INDEX; Schema: public; Owner: nonche; Tablespace: 
+-- Name: index_users_on_email; Type: INDEX; Schema: public; Owner: nonche; Tablespace:
 --
 
 CREATE UNIQUE INDEX index_users_on_email ON users USING btree (email);
 
 
 --
--- Name: index_users_on_reset_password_token; Type: INDEX; Schema: public; Owner: nonche; Tablespace: 
+-- Name: index_users_on_reset_password_token; Type: INDEX; Schema: public; Owner: nonche; Tablespace:
 --
 
 CREATE UNIQUE INDEX index_users_on_reset_password_token ON users USING btree (reset_password_token);
 
 
 --
--- Name: unique_schema_migrations; Type: INDEX; Schema: public; Owner: nonche; Tablespace: 
+-- Name: unique_schema_migrations; Type: INDEX; Schema: public; Owner: nonche; Tablespace:
 --
 
 CREATE UNIQUE INDEX unique_schema_migrations ON schema_migrations USING btree (version);
@@ -543,12 +521,10 @@ CREATE UNIQUE INDEX unique_schema_migrations ON schema_migrations USING btree (v
 --
 
 REVOKE ALL ON SCHEMA public FROM PUBLIC;
-REVOKE ALL ON SCHEMA public FROM nonche;
-GRANT ALL ON SCHEMA public TO nonche;
+
 GRANT ALL ON SCHEMA public TO PUBLIC;
 
 
 --
 -- PostgreSQL database dump complete
 --
-

@@ -244,10 +244,10 @@ Franchino.config ($stateProvider, $urlRouterProvider, $locationProvider, $httpPr
       store.set 'token', idToken
       store.set 'refreshToken', refreshToken
       localStorage.setItem('token', idToken);
-      window.location.href = 'localhost:3000'
+      window.location.href = 'http://alcura-shop.herokuapp.com'
 
   authProvider.on "authenticated", ($location, error) ->
-    $location.url 'localhost:3000'
+    $location.url 'http://alcura-shop.herokuapp.com'
 
 
   authProvider.on "loginFailure", ($location, error) ->
