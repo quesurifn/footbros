@@ -12,7 +12,7 @@ else
     'angular-jwt'])
 
 Franchino.run ($ionicPlatform, $rootScope) ->
-  $rootScope.server = 'https://gamify-node.herokuapp.com'
+  $rootScope.server = 'https://alcura.herokuapp.com'
   $ionicPlatform.ready ->
       if window.StatusBar
         StatusBar.styleDefault()
