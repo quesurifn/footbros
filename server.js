@@ -56,7 +56,6 @@ app.use(compression());
 
 app.use('/', express["static"](__dirname + '/www'));
 
-
 app.get('/products', products.findAll);
 
 app.get('/products/:id', products.findById);
