@@ -243,11 +243,25 @@ Franchino.config ($stateProvider, $urlRouterProvider, $locationProvider, $httpPr
       store.set 'profile', profile
       store.set 'token', idToken
       store.set 'refreshToken', refreshToken
-      localStorage.setItem('token', idToken);
-      window.location.href = 'http://alcura-shop.herokuapp.com'
+
+      storage = new CrossStorageClient("https://alcura.herokuapp.com")
+        setKeys = ->
+          storage.set("key1", "foo").then ->
+            storage.set "key2", "bar"
+
+
+        # 'foo'
+        storage.onConnect().then(setKeys).then(->
+          storage.get "key1"
+        ).then((res) ->
+          console.log res
+        )["catch"] (err) ->
+          console.log err
+
+      window.location.href = 'https://alcura-shop.herokuapp.com'
 
   authProvider.on "authenticated", ($location, error) ->
-    $location.url 'http://alcura-shop.herokuapp.com'
+    $location.url 'https://alcura-shop.herokuapp.com'
 
 
   authProvider.on "loginFailure", ($location, error) ->
