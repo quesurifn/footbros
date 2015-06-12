@@ -268,14 +268,3 @@
     root.CrossStorageHub = CrossStorageHub;
   }
 }(this));
-
-console.log("initiating cross storage hub")
-CrossStorageHub.init([
-  {
-    origin: /\.herokuapp.com$/,
-    allow: ["get", "set"]
-  }, {
-    origin: /:\/\/(www\.)?herokuapp.com$/,
-    allow: ["get", "set", "del"]
-  }
-]);

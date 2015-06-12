@@ -170,6 +170,12 @@ Franchino.config ($stateProvider, $urlRouterProvider, $locationProvider, $httpPr
           controller: 'JobKoupnCtrl'
           templateUrl: 'job-koupn.html'
 
+    .state 'app.hub',
+      url: '/hub'
+      views:
+        menuContent:
+          templateUrl: 'hub.html'
+
     .state 'app.job-tround',
       url: '/job-tround'
       views:
@@ -244,14 +250,12 @@ Franchino.config ($stateProvider, $urlRouterProvider, $locationProvider, $httpPr
       store.set 'token', idToken
       store.set 'refreshToken', refreshToken
 
-      storage = new CrossStorageClient("https://alcura.herokuapp.com/")
-      setKeys = ->
-        storage.set("token", idToken)
+      storage = new CrossStorageClient("https://alcura.herokuapp.com/#/hub")
 
-      storage.onConnect().then(setKeys).then((res) ->
-        console.log res
-      )["catch"] (err) ->
-        console.log err
+      setKeys = ->
+        storage.set "token", idToken
+
+      storage.onConnect().then(setKeys)
 
       window.location.href = 'https://alcura-shop.herokuapp.com'
 
