@@ -244,13 +244,11 @@ Franchino.config ($stateProvider, $urlRouterProvider, $locationProvider, $httpPr
       store.set 'token', idToken
       store.set 'refreshToken', refreshToken
 
-      storage = new CrossStorageClient("https://alcura.herokuapp.com")
+      storage = new CrossStorageClient("https://alcura.herokuapp.com/")
       setKeys = ->
         storage.set("key1", "foo").then ->
           storage.set "key2", "bar"
 
-
-      # 'foo'
       storage.onConnect().then(setKeys).then(->
         storage.get "key1"
       ).then((res) ->

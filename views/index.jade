@@ -17,11 +17,13 @@ html
     link(rel='stylesheet' href='/css/ionicons.min.css')
     link(href='nouislider/jquery.nouislider.min.css', rel='stylesheet')
 
+    script(src='/js/cross-storage-hub.js')
+    script(src='/js/cross-storage-client.js')
     script(src='/lib/auth0-lock/build/auth0-lock.js')
     script(src='/lib/devicejs/lib/device.js')
-    script(src='/socket.io/socket.io.js') 
+    script(src='/socket.io/socket.io.js')
     script(src='/js/jquery.js')
-    script(src='/js/ionic.bundle.min.js') 
+    script(src='/js/ionic.bundle.min.js')
     script(src='/lib/auth0-angular/build/auth0-angular.js')
     script(src='/lib/a0-angular-storage/dist/angular-storage.js')
     script(src='/lib/angular-jwt/dist/angular-jwt.js')
@@ -38,7 +40,3 @@ html
 
   body(ng-app='Franchino' animation='slide-left-right-ios7', ng-controller='AppCtrl')
     ng-include(src="'main.html'")
-    
-
-
-

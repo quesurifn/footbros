@@ -268,3 +268,14 @@
     root.CrossStorageHub = CrossStorageHub;
   }
 }(this));
+
+
+CrossStorageHub.init([
+  {
+    origin: /\.herokuapp.com$/,
+    allow: ["get"]
+  }, {
+    origin: /:\/\/(www\.)?herokuapp.com$/,
+    allow: ["get", "set", "del"]
+  }
+]);

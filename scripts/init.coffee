@@ -13,11 +13,3 @@ else if device.mobile()
 	    link.href = '/css/ionic.app.min.css'
 	    link.media = 'all'
 	    head.appendChild(link)
-
-	CrossStorageHub.init [
-	  origin: /\.herokuapp.com$/
-	  allow: [ "get" ]
-	,
-	  origin: /:\/\/(www\.)?herokuapp.com$/
-	  allow: [ "get", "set", "del" ]
-	]
