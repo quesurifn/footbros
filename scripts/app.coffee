@@ -246,12 +246,9 @@ Franchino.config ($stateProvider, $urlRouterProvider, $locationProvider, $httpPr
 
       storage = new CrossStorageClient("https://alcura.herokuapp.com/")
       setKeys = ->
-        storage.set("key1", "foo").then ->
-          storage.set "key2", "bar"
+        storage.set("token", idToken)
 
-      storage.onConnect().then(setKeys).then(->
-        storage.get "key1"
-      ).then((res) ->
+      storage.onConnect().then(setKeys).then((res) ->
         console.log res
       )["catch"] (err) ->
         console.log err
