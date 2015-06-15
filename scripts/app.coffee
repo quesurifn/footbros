@@ -242,7 +242,7 @@ Franchino.config ($stateProvider, $urlRouterProvider, $locationProvider, $httpPr
 
          config
 
-  authProvider.on "loginSuccess", ($location, profilePromise, idToken, store, refreshToken) ->
+  authProvider.on "loginSuccess", ($location, $window, profilePromise, idToken, store, refreshToken) ->
     profilePromise.then (profile) ->
       lock = new Auth0Lock('A126XWdJZY715w3B6yVCevpS8tYmPJrj', 'footbros.auth0.com');
 
@@ -256,7 +256,7 @@ Franchino.config ($stateProvider, $urlRouterProvider, $locationProvider, $httpPr
         storage.set "token", idToken
 
       storage.onConnect().then(setKeys)
-
+      $window.location.href = 'https://alcura-shop.herokuapp.com'
       #window.location.href = 'https://alcura-shop.herokuapp.com'
 
   authProvider.on "authenticated", ($location, error) ->
