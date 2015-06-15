@@ -257,7 +257,7 @@ Franchino.config ($stateProvider, $urlRouterProvider, $locationProvider, $httpPr
 
       storage.onConnect().then(setKeys)
 
-      window.location.href = 'https://alcura-shop.herokuapp.com'
+      #window.location.href = 'https://alcura-shop.herokuapp.com'
 
   authProvider.on "authenticated", ($location, error) ->
     $location.url 'https://alcura-shop.herokuapp.com'
