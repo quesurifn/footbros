@@ -12,7 +12,7 @@ else
     'angular-jwt'])
 
 Franchino.run ($ionicPlatform, $rootScope) ->
-  $rootScope.server = 'https://alcura.herokuapp.com'
+  $rootScope.server = 'https://vapealcura.com'
   $ionicPlatform.ready ->
       if window.StatusBar
         StatusBar.styleDefault()
@@ -250,17 +250,16 @@ Franchino.config ($stateProvider, $urlRouterProvider, $locationProvider, $httpPr
       store.set 'token', idToken
       store.set 'refreshToken', refreshToken
 
-      storage = new CrossStorageClient("https://alcura.herokuapp.com/#/hub")
+      storage = new CrossStorageClient("https://vapealcura.com/#/hub")
 
       setKeys = ->
         storage.set "token", idToken
 
       storage.onConnect().then(setKeys)
-      $window.location.href = 'https://alcura-shop.herokuapp.com'
-      #window.location.href = 'https://alcura-shop.herokuapp.com'
+      $window.location.href = 'https://shop.vapealcura.com'
 
   authProvider.on "authenticated", ($location, error) ->
-    $location.url 'https://alcura-shop.herokuapp.com'
+    $location.url 'https://shop.vapealcura.com'
 
 
   authProvider.on "loginFailure", ($location, error) ->
