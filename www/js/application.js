@@ -5,7 +5,7 @@ if (device.desktop()) {
 }
 
 Franchino.run(function($ionicPlatform, $rootScope) {
-  $rootScope.server = 'https://vapealcura.com';
+  $rootScope.server = '';
   $ionicPlatform.ready(function() {
     if (window.StatusBar) {
       StatusBar.styleDefault();

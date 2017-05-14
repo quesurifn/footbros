@@ -7,7 +7,7 @@ angular.module('explorer', ['ionic',
 
     .run(function ($ionicPlatform, $rootScope) {
 
-        $rootScope.server = "http://footbros.com";
+        $rootScope.server = "";
 
         $ionicPlatform.ready(function () {
             if (window.StatusBar) {

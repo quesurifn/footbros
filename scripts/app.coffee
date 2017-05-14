@@ -12,7 +12,7 @@ else
     'angular-jwt'])
 
 Franchino.run ($ionicPlatform, $rootScope) ->
-  $rootScope.server = 'https://vapealcura.com'
+  $rootScope.server = ''
   $ionicPlatform.ready ->
       if window.StatusBar
         StatusBar.styleDefault()
