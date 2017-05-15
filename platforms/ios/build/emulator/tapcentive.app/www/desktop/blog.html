@@ -1,0 +1,15 @@
+<style>.row {
+text-align:left !important;
+}
+h6 {
+text-align:left !important;
+height:60px !important;
+padding:0px !important;
+margin:0px !important;
+}
+h2 {
+text-align:left !important;
+
+}
+
+</style><section id="main-content" ng-controller="BlogCtrl" style="background-color: #efefef;margin-top:-80px;padding-top:80px;" ng-repeat="article in articles" class="first"><div class="row"><div class="large-12 columns centered-text"><div class="row"><div class="large-1 columns small-3"><img ng-src="{{article.authorimg}}"/></div><div class="large-11 columns"><h6>{{article.date}}</h6><br/><h2>{{article.heading}}</h2><br/><img ng-src="{{article.img}}"/><br/><br/><br/><p ng-bind-html-unsafe="{{article.blob}}">{{article.blob}}</p><a ng-href="{{article.resource1}}">{{article.resource1}}</a><br/><a ng-href="{{article.resource2}}">{{article.resource2}}</a><ul class="inline-list"></ul></div></div></div></div></section>

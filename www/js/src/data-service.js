@@ -5,10 +5,11 @@ productService = (function () {
     // The public API
     return {
         findById: function(id) {
-            return $.ajax(baseURL + "/products/" + id);
+            //return $.ajax(baseURL + "/products/" + id);
+             return $.ajax("/products/" + id);
         },
         findAll: function(values) {
-            return $.ajax({url: baseURL + "/products", data: values});
+            return $.ajax({url: "/products", data: values});
         }
     };
 

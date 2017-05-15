@@ -5,9 +5,9 @@ angular.module('explorer', ['ionic',
     'angular-storage',
     'angular-jwt'])
 
-    .run(function ($ionicPlatform, $rootScope) {
+    .run(function ($ionicPlatform, $rootScope) { 
 
-        $rootScope.server = "http://footbros.com";
+        $rootScope.server = ""; 
 
         $ionicPlatform.ready(function () {
             if (window.StatusBar) {

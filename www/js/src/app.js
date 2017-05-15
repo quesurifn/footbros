@@ -19,7 +19,7 @@ var SearchBar = React.createClass({
         this.refs.searchKey.getDOMNode().value = "";
         this.props.searchKeyChange("");
     },
-    render: function () {
+    render: function () { 
         return (
             <div className="search-wrapper">
                 <input type="search" ref="searchKey" className="form-control"

@@ -19,19 +19,26 @@ exports.query = function (sql, values, singleItem, dontLog) {
     var deferred = Q.defer();
 
     pg.connect(databaseURL, function (err, conn, done) {
-        if (err) return deferred.reject(err);
+        if (err) { 
+            console.log(err)
+            return deferred.reject(err);
+        }
+
         try {
             conn.query(sql, values, function (err, result) {
                 done();
                 if (err) {
                     deferred.reject(err);
+                    console.log("err" + err)
                 } else {
                     deferred.resolve(singleItem ? result.rows[0] : result.rows);
+                     console.log("DB Connected")
                 }
             });
         }
         catch (e) {
             done();
+            console.log(e)
             deferred.reject(e);
         }
     });
